@@ -1,0 +1,53 @@
+.socialMedia svg{
+    max-width: 50px;
+    min-width: 20px;
+    height: 30px;
+}
+.contact{
+    display: flex;
+    padding: 3rem 0;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.socialMedia{
+    display: flex;
+}
+
+.socialMediaBox{
+    text-align: left;
+}
+
+.contactColumn{
+    width: 50%;
+    margin: 1rem 0;
+}
+
+.feedBackLink{
+    display: flex;
+    text-decoration: none;
+    color: #212529;
+}
+
+.feedBackLink:hover, .feedBackLink:active{
+    text-decoration: underline;
+    color: #23272b;
+}
+
+.feedBackLink svg{
+    margin-right: 1rem;
+    margin-top: .2rem;
+}
+
+.tellYourThoughts{
+    text-align: left;
+}
+
+@media (max-width: 740px){
+    .contact{
+        display: block;
+        padding: 1.5rem 0;
+    }
+    .contactColumn:nth-child(2){
+        margin-top: 1.5rem;
+    }
+}

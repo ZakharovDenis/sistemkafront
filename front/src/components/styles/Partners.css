@@ -1,0 +1,47 @@
+.partnersBox{
+    text-align: left;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.partnerLogoBox{
+    width: 25%;
+    margin: 1rem 1rem;
+    animation: fade 2s 1 0s;
+    display: flex;
+}
+
+.partnerLogoBox img{
+    object-fit: scale-down;
+    max-height: 50px;
+    min-height: 25px;
+    width: 100%;
+}
+
+.partnersLogoBox{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: center;
+}
+
+@media (max-width: 740px){
+    .partnerLogoBox{
+        width: calc(33% - 10px);
+    }
+    .partnersBox{
+        padding-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,19 @@
+.homepage{
+    padding: 80px 5rem 0;
+    max-width: 1444px;
+    margin: 0px auto;
+  }
+
+@media (max-width: 850px){
+    .homepage{
+      padding: 80px 1rem 0;
+    }
+  }
+  
+  
+  @media (max-width: 740px){
+    .homepage{
+      padding: 80px 1rem 0;
+      /* padding: 80px 1rem 5rem;  this is correct   */
+    }
+  }

@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  server:
+    build: back/
+    command: flask run -h 0.0.0.0
+    ports:
+      - 5000:5000
+  client:
+    build: front/
+    command: npm start 
+    volumes:
+        - '.:/front'
+        - '/front/node_modules'
+    ports:
+        - 80:3000
+    depends_on:
+      - server
+    stdin_open: true

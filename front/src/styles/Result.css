@@ -1,0 +1,6 @@
+.result{
+    display: flex;
+    max-width: 2000px;
+    justify-content: center;
+    margin: auto;
+}
